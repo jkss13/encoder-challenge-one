@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="shortcut icon" href="icon/one-icon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONE - Decodificador de Texto</title>
+
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>
+                <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">
+                    <img src="images/one-logo.png">
+                </a>
+                <p>Encriptador</p>
+            </h1>
+        </header>
+        <main>
+            <section class="left-section">
+                <textarea type="text" cols="90" rows="18" id="box-in-text" class="box-in-text" required placeholder="Seu texto aqui"></textarea>
+                <p>⚠︎ Apenas letras minúsculas e sem acento.</p>
+                <div class="left-btns">
+                    <button class="btn-encrypt">Criptografar</button>
+                    <button class="btn-decrypt">Descriptografar</button>
+                </div>
+            </section>
+            <section class="right-section">
+                <textarea cols="33" rows="22" id="box-out-text" class="box-out-text" readonly></textarea>
+                <div class="temporary-img" onclick="hideImgElement()"><img src="images/temporary-img.png" id="temporary-img" readonly></div>
+                <div class="temporary-msg" onclick="hideTxtElement()">
+                    <h3>Nenhuma mensagem <br>encontrada</br></h3>
+                    <p>Digite um texto que você deseja criptografar</p>
+                </div>
+                <div class="right-btn">
+                    <button class="btn-copy">Copia</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="https://about.me/karinesantos" target="_blank" class="dev-signature"><img src="images/dev-signature.png"></a>
+        </footer>
+            <script src="script/main.js"></script>
+    </body>
+</html>
